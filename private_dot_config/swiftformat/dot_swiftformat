@@ -1,0 +1,106 @@
+--acronyms ID,URL,UUID
+--allman false
+--anonymousforeach convert
+--assetliterals actual-width
+--asynccapturing 
+--beforemarks 
+--binarygrouping 4,8
+--callsiteparen balanced
+--categorymark "MARK: - %c"
+--classthreshold 0
+--closingparen balanced
+--closurevoid remove
+--commas always
+--complexattrs prev-line
+--computedvarattrs prev-line
+--condassignment after-property
+--conflictmarkers reject
+--dateformat system
+--decimalgrouping 3,6
+--doccomments before-declarations
+--elseposition same-line
+--emptybraces no-space
+--enumnamespaces always
+--enumthreshold 0
+--exponentcase lowercase
+--exponentgrouping disabled
+--extensionacl on-extension
+--extensionlength 0
+--extensionmark "MARK: - %t + %c"
+--fractiongrouping disabled
+--fragment false
+--funcattributes prev-line
+--generictypes 
+--groupblanklines true
+--groupedextension "MARK: - %c"
+--guardelse auto
+--header ignore
+--hexgrouping 4,8
+--hexliteralcase uppercase
+--ifdef indent
+--importgrouping alpha
+--indent 4
+--indentcase false
+--indentstrings true
+--inferredtypes always
+--initcodernil false
+--inlinedforeach ignore
+--lifecycle 
+--lineaftermarks true
+--linebreaks lf
+--markcategories true
+--markextensions always
+--marktypes always
+--maxwidth 120
+--modifierorder 
+--nevertrailing 
+--nilinit remove
+--noncomplexattrs 
+--nospaceoperators 
+--nowrapoperators 
+--octalgrouping 4,8
+--operatorfunc spaced
+--organizationmode visibility
+--organizetypes actor,class,enum,struct
+--patternlet hoist
+--preservedecls 
+--preservedsymbols Package
+--propertytypes infer-locals-only
+--ranges spaced
+--self remove
+--selfrequired 
+--semicolons never
+--shortoptionals except-properties
+--smarttabs disabled
+--someany true
+--sortedpatterns 
+--storedvarattrs same-line
+--stripunusedargs closure-only
+--structthreshold 0
+--tabwidth 4
+--throwcapturing 
+--timezone system
+--trailingclosures 
+--trimwhitespace always
+--typeattributes prev-line
+--typeblanklines remove
+--typedelimiter space-after
+--typemark "MARK: - %t"
+--typemarks 
+--typeorder 
+--visibilitymarks 
+--visibilityorder 
+--voidtype void
+--wraparguments before-first
+--wrapcollections before-first
+--wrapconditions before-first
+--wrapeffects never
+--wrapenumcases always
+--wrapparameters before-first
+--wrapreturntype preserve
+--wrapternary before-operators
+--wraptypealiases before-first
+--xcodeindentation enabled
+--yodaswap always
+--disable preferKeyPath,redundantType,trailingCommas,wrapMultilineStatementBraces,wrapSingleLineComments
+--enable blankLineAfterSwitchCase,blankLinesBetweenImports,docComments,isEmpty,markTypes,noExplicitOwnership,redundantProperty,wrapEnumCases,wrapMultilineConditionalAssignment
