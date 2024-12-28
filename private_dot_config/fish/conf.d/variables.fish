@@ -15,28 +15,30 @@ set -Ux XDG_MUSIC_DIR $HOME/Music
 set -Ux XDG_PICTURES_DIR $HOME/Pictures
 set -Ux XDG_VIDEOS_DIR $HOME/Videos
 
-# Set default editor
-set -Ux EDITOR nvim
+# Set EDITOR
+if type -q nvim
+  set -Ux EDITOR nvim
+else
+  set -Ux EDITOR vim
+end
 
-# Set languages
+# Set misc variables
 set -Ux LC_ALL "en_GB.UTF-8"
 set -Ux LANG "en_GB.UTF-8"
+set -Ux PAGER less
 
 # Set Homebrew variables
-if test -d /home/linuxbrew/.linuxbrew # Linux
-	set -Ux HOMEBREW_PREFIX "/home/linuxbrew/.linuxbrew"
-	set -Ux HOMEBREW_CELLAR "$HOMEBREW_PREFIX/Cellar"
-	set -Ux HOMEBREW_REPOSITORY "$HOMEBREW_PREFIX/Homebrew"
-else if test -d /opt/homebrew # MacOS
+if test -d /opt/homebrew
 	set -Ux HOMEBREW_PREFIX "/opt/homebrew"
 	set -Ux HOMEBREW_CELLAR "$HOMEBREW_PREFIX/Cellar"
 	set -Ux HOMEBREW_REPOSITORY "$HOMEBREW_PREFIX/homebrew"
+
+  set -Ux HOMEBREW_NO_ENV_HINTS TRUE
+
+  ! set -q MANPATH; and set MANPATH ''; set -Ux MANPATH "$HOMEBREW_PREFIX/share/man" $MANPATH;
+  ! set -q INFOPATH; and set INFOPATH ''; set -Ux INFOPATH "$HOMEBREW_PREFIX/share/info" $INFOPATH;
+
+  # Add Homebrew bins to PATH
+  fish_add_path -U "$HOMEBREW_PREFIX/bin" "$HOMEBREW_PREFIX/sbin";
 end
 
-set -Ux HOMEBREW_NO_ENV_HINTS TRUE
-
-! set -q MANPATH; and set MANPATH ''; set -Ux MANPATH "$HOMEBREW_PREFIX/share/man" $MANPATH;
-! set -q INFOPATH; and set INFOPATH ''; set -Ux INFOPATH "$HOMEBREW_PREFIX/share/info" $INFOPATH;
-
-# Add Homebrew bins to PATH
-fish_add_path -U "$HOMEBREW_PREFIX/bin" "$HOMEBREW_PREFIX/sbin";
