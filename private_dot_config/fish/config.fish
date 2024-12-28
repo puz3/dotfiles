@@ -39,7 +39,3 @@ alias sshp="ssh -i ~/.ssh/id_ed25519_personal"
 
 # Set Catppuccin theme
 fish_config theme choose "Catppuccin Mocha"
-fish_config prompt choose "Arrow"
-
-# Enable Zoxide
-zoxide init fish | source
