@@ -1,6 +1,6 @@
 # Alias some of the brew commands
-abbr --add bu "brew upgrade"
-abbr --add bc "brew autoremove && brew cleanup"
+abbr --add bu "brew update;brew upgrade"
+abbr --add bc "brew autoremove;brew cleanup"
 
 # Alias to use eza if it installed on the system.
 if type -q eza
