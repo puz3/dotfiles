@@ -5,3 +5,5 @@ theme = catppuccin-mocha
 
 window-width = 160
 window-height = 40
+
+cursor-style = block
