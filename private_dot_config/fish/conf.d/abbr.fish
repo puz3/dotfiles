@@ -18,6 +18,11 @@ else
   abbr --add la "ls -A"
 end
 
+# Use zoxide instead of cd if it is installed on the system.
+if type -q zoxide
+  abbr --add cd 'z'
+end
+
 # Alias bat if it is installed.
 if type -q bat
   abbr --add cat "bat"
