@@ -18,6 +18,12 @@ return {
 			lua = { "stylua" },
 			python = { "isort", "black" },
 			javascript = { "prettier" },
+			swift = { "swiftformat" },
+		},
+		formatters = {
+			swiftformat = {
+				prepend_args = { "--config", "~/.config/swiftformat/.swiftformat" },
+			},
 		},
 	},
 }
