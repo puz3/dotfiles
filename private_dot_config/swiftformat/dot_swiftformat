@@ -45,6 +45,7 @@
 --inferredtypes always
 --initcodernil false
 --inlinedforeach ignore
+--languagemode 0
 --lifecycle 
 --lineaftermarks true
 --linebreaks lf
@@ -60,7 +61,7 @@
 --nowrapoperators 
 --octalgrouping 4,8
 --operatorfunc spaced
---organizationmode visibility
+--organizationmode type
 --organizetypes actor,class,enum,struct
 --patternlet hoist
 --preservedecls 
@@ -77,6 +78,7 @@
 --storedvarattrs same-line
 --stripunusedargs closure-only
 --structthreshold 0
+--swiftversion 6.0
 --tabwidth 4
 --throwcapturing 
 --timezone system
@@ -102,5 +104,5 @@
 --wraptypealiases before-first
 --xcodeindentation enabled
 --yodaswap always
---disable preferKeyPath,redundantType,trailingCommas,wrapMultilineStatementBraces,wrapSingleLineComments
+--disable preferKeyPath,redundantType,trailingCommas,wrapMultilineStatementBraces
 --enable blankLineAfterSwitchCase,blankLinesBetweenImports,docComments,isEmpty,markTypes,noExplicitOwnership,redundantProperty,wrapEnumCases,wrapMultilineConditionalAssignment
