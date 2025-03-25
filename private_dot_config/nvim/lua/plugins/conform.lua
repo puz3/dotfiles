@@ -19,6 +19,7 @@ return {
 			javascript = { "prettier" },
 			swift = { "swiftformat" },
 			yaml = { "yamlfmt" },
+			json = { "jq" },
 		},
 		formatters = {
 			swiftformat = {
