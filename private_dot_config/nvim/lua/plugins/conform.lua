@@ -19,6 +19,7 @@ return {
 			python = { "isort", "black" },
 			javascript = { "prettier" },
 			swift = { "swiftformat" },
+			yaml = { "yamlfmt" },
 		},
 		formatters = {
 			swiftformat = {
