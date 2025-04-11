@@ -104,5 +104,5 @@
 --wraptypealiases before-first
 --xcodeindentation enabled
 --yodaswap always
---disable preferKeyPath,redundantType,trailingCommas,wrapMultilineStatementBraces
+--disable andOperator,preferKeyPath,redundantType,trailingCommas,wrapMultilineStatementBraces
 --enable blankLineAfterSwitchCase,blankLinesBetweenImports,docComments,isEmpty,markTypes,noExplicitOwnership,redundantProperty,wrapEnumCases,wrapMultilineConditionalAssignment
