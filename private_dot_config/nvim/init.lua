@@ -6,6 +6,9 @@ vim.g.maplocalleader = " "
 -- Load Lazy
 require("config.lazy")
 
+-- Load lualine
+require('lualine').setup()
+
 -- Line number configuration.
 -- Enable line numbers.
 -- Enable relative line numbers.
