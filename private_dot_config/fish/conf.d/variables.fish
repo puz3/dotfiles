@@ -42,3 +42,10 @@ if test -d /opt/homebrew
   fish_add_path -U "$HOMEBREW_PREFIX/bin" "$HOMEBREW_PREFIX/sbin";
 end
 
+# Swiftly
+if type -q swiftly
+  set -Ux SWIFTLY_HOME_DIR "/Users/povilas/.swiftly"
+  set -Ux SWIFTLY_BIN_DIR "/Users/povilas/.swiftly/bin"
+
+  fish_add_path -U "$SWIFTLY_BIN_DIR"
+end
