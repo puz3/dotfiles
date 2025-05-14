@@ -49,3 +49,8 @@ if type -q swiftly
 
   fish_add_path -U "$SWIFTLY_BIN_DIR"
 end
+
+# Use nvim as a manpager
+if type -q nvim
+  set -Ux MANPAGER "nvim +Man!"
+end
