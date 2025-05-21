@@ -29,3 +29,19 @@ if type -q bat
 end
 
 abbr --add sshp "ssh -i ~/.ssh/id_ed25519_personal"
+
+# Git section
+if type -q git
+  abbr --add gd "git diff"
+
+  abbr --add ga "git add"
+  abbr --add gc "git commit"
+
+  abbr --add gp "git push"
+  abbr --add gu "git pull"
+
+  abbr --add gl "git log"
+  abbr --add gb "git branch"
+
+  abbr --add gs "git status"
+end
