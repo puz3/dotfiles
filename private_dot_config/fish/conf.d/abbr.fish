@@ -43,5 +43,5 @@ if type -q git
   abbr --add gl "git log"
   abbr --add gb "git branch"
 
-  abbr --add gs "git status"
+  abbr --add gs "git status --short"
 end
