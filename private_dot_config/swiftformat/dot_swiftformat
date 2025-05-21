@@ -1,4 +1,4 @@
---acronyms ID,URL,UUID
+--acronyms ID,SSN,URI,URL,UUID
 --allman false
 --anonymousforeach convert
 --assetliterals actual-width
@@ -22,11 +22,13 @@
 --emptybraces no-space
 --enumnamespaces always
 --enumthreshold 0
+--equatablemacro none
 --exponentcase lowercase
 --exponentgrouping disabled
 --extensionacl on-extension
 --extensionlength 0
 --extensionmark "MARK: - %t + %c"
+--filemacro #file
 --fractiongrouping disabled
 --fragment false
 --funcattributes prev-line
@@ -64,6 +66,7 @@
 --organizationmode type
 --organizetypes actor,class,enum,struct
 --patternlet hoist
+--preserveacronyms 
 --preservedecls 
 --preservedsymbols Package
 --propertytypes infer-locals-only
@@ -75,10 +78,11 @@
 --smarttabs disabled
 --someany true
 --sortedpatterns 
+--sortswiftuiprops none
 --storedvarattrs same-line
 --stripunusedargs closure-only
 --structthreshold 0
---swiftversion 6.0
+--swiftversion 6.1
 --tabwidth 4
 --throwcapturing 
 --timezone system
@@ -103,6 +107,7 @@
 --wrapternary before-operators
 --wraptypealiases before-first
 --xcodeindentation enabled
+--xctestsymbols 
 --yodaswap always
---disable andOperator,preferKeyPath,redundantType,trailingCommas,wrapMultilineStatementBraces
---enable blankLineAfterSwitchCase,blankLinesBetweenImports,docComments,isEmpty,markTypes,noExplicitOwnership,redundantProperty,wrapEnumCases,wrapMultilineConditionalAssignment
+--disable andOperator,blankLinesAtEndOfScope,blankLinesAtStartOfScope,preferKeyPath,redundantType,trailingCommas,wrapMultilineStatementBraces
+--enable acronyms,blankLineAfterSwitchCase,blankLinesAfterGuardStatements,blankLinesBetweenImports,docComments,isEmpty,markTypes,noExplicitOwnership,preferSwiftTesting,redundantProperty,wrapEnumCases,wrapMultilineConditionalAssignment
